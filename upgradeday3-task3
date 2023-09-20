@@ -1,0 +1,45 @@
+def Grade_Convertergpa(convert_to,**student_scores):
+  student_grades = {}
+  
+  
+  for student in student_scores:
+      score = student_scores[student]
+      if score >= 85:
+        student_grades[student] = "4"
+      elif score >=70:
+        student_grades[student] = "3"
+      elif score >=60:
+        student_grades[student] = "2.5"
+      elif score >=50:
+        student_grades[student] = "2"
+      elif score >=40:
+        student_grades[student] = "1.5"
+      else:
+        student_grades[student] = "1"
+  print(student_grades)
+  print(convert_to)
+
+Grade_Convertergpa(convert_to='gpa', Adam=62, Faiz=91)
+
+def Grade_Converterletter(convert_to,**student_scores):
+  student_grades = {}
+  
+  
+  for student in student_scores:
+      score = student_scores[student]
+      if score >= 85:
+        student_grades[student] = "A"
+      elif score >=70:
+        student_grades[student] = "B"
+      elif score >=60:
+        student_grades[student] = "C"
+      elif score >=50:
+        student_grades[student] = "D"
+      elif score >=40:
+        student_grades[student] = "E"
+      else:
+        student_grades[student] = "F"
+  print(student_grades)
+  print(convert_to)
+
+Grade_Converterletter('letter_grade', Albert=90, Dwi=82, Syahdan=58, Veronica=84)

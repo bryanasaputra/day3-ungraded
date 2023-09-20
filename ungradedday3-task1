@@ -1,0 +1,23 @@
+# Create a function that count the number of word in a sentence.
+# Instruction:
+# 1.Create function called `number_of_word`.
+# 2.This function takes 1 input, `sentence`.
+# 3.Inside this function, you can utilize `.split()` method to split the sentence into list of word(s).
+# 4.Also, `len()` function to count the element inside a list.
+# 5.Return the number of word from the sentence.
+# Example:-
+# Input: number_of_word(sentence = ’Hello World!’)-
+# Output: 2
+# Input: number_of_word(sentence = ’Once Upon a Time in a faraway land’)-
+# Output: 8
+
+
+
+# Task #1 - Number of Word
+def number_of_word():
+  user_input = input("Enter your sentence ")
+  list = user_input.split()
+  word_count = len(list)
+  print(f"Output: {word_count}")
+#   print(list)
+number_of_word()

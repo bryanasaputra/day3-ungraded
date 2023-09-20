@@ -1,0 +1,16 @@
+
+# Program to display the Fibonacci sequence up to n-th term
+# n = int(input("How many terms? "))
+def myfunction(n):
+  n0, n1 = 0, 1
+  count = 0
+  if n < 0:
+     print("Please enter a positive integer")
+  else:
+     while count < n:
+         nth = n0 + n1
+         n0 = n1
+         n1 = nth
+         count += 1
+  print(n0)
+myfunction(n=4)

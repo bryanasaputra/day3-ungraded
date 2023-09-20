@@ -1,0 +1,23 @@
+# Instruction:
+# 1.Create function called `find_multiples`.
+# 2.This function takes 3 input: `start_range`, `end_range`, and `multiple`.
+# 3.From every number within the given range, check if that number is the mutliples of `multiple`.
+# 4.Return list of the possible multiple number(s).
+# Example:
+# Input: find_multiple(start_range= 1, end_range= 20, multiple= 5)
+# Output: [5, 10, 15, 20]
+# Input: find_multiple(start_range= 1, end_range= 50, multiple= 10)
+# Output: [10, 20, 30, 40, 50]
+#Task 2
+def find_multiples():
+  start_range= (int(input("Enter Start Range "))-1)
+  end_range= int(input("Enter End Range "))
+  multiple= int(input("Enter multiple "))
+  
+  output = []
+  
+  for i in range(start_range+multiple, end_range+1, multiple):
+    output.append(i)
+  print(output)
+
+find_multiples()
